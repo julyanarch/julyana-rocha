@@ -1,0 +1,400 @@
+:root,
+:root[data-theme="dark"] {
+    --primary-bg: #161616; /*Bg = background */
+    --primary-color:#dadada ; /* Texto */
+    --hover-menu: #772c2c ; /* Cor da fonte ao passar o mouse */
+    --icone-color: #772c2c ;
+    --icone-tema: #772c2c ;
+
+    --cor-titulo:#dadada ;
+}
+
+:root[data-theme="light"] {
+    --primary-bg: #dadada; 
+    --primary-color:#161616 ; 
+    --cor-titulo:#772c2c ;
+}
+
+body{
+    background-color: var(--primary-bg); /* Cor do fundo */
+    color: var(--primary-color) ; /*Cor do fundo */
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;/* Fonte*/    font-size: 15px ; /* Tamanho da fonte */
+}
+
+html[data-theme="light"] .logo {
+    filter: invert(1);
+
+}
+
+a {
+    text-decoration: none; /* Tirar o underline */
+    color: var(--primary-color) ; 
+}
+
+a:hover { /* Cor da fonte ao passar o mouse */
+    color: #772c2c
+}
+
+i {
+    color: var(--icone-color)
+}
+
+b{
+    font-weight: 400;
+}
+
+
+h1{
+   font-size: 2.5rem;
+   font-weight: 200;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p, span {
+   font-size: 1rem;
+}
+
+p{
+  text-align: justify;
+}
+
+
+
+/* Reset CSS */
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Fim do reset */
+
+/* Header */
+#header {
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% ;
+    padding: 0,5rem 2,5rem ;
+    z-index: 2;
+    background: var(--primary-bg);
+
+}
+
+/* .header-logo  .logo */
+.logo {  /* img */
+    width: 3.25rem; /* Comprimento */
+    height: 3.25rem; /* Altura */
+}
+
+.header-toggle {
+    display: flex ;
+    justify-content: flex-end ; 
+}
+
+#toggleTheme {
+   color: #772c2c;
+   font-size: 2rem ;
+   cursor: pointer;
+
+}
+
+.menu { /* UL */
+    display:flex;
+    align-items: center;
+    background: var(--primary-bg) ;
+    gap: 1rem ;
+}
+
+.menu-item {
+    width: 100% ;
+}
+
+/* .menu-link {
+    display: flex;
+} */
+
+.header-nav {
+    display: none;
+}
+
+/* Menu Mobile */
+.menu-mobile {
+    width: 100vw; /*V W = Viewport Width */
+    position: fixed;
+    bottom: 0 ;
+    justify-content: space-between;
+    border-top: 1px solid #772c2c;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link.hover .menu-icon, 
+.menu-link:hover .menu-text {
+    color: var(--primary-color); /* cor de lind */
+}
+
+.menu-icon, .menu-text{
+    color: var(--hover-menu);
+    font-weight: 600;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+}
+
+.menu-text{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.menu-social {
+    gap: 2rem;
+}
+
+.menu-social .menu-icon {
+    color: #772c2c;
+
+}
+
+.menu-social .menu-icon:hover {
+    color:var(--primary-color);
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background: transparent; /*deixar transparent */
+    border-radius: 3rem; /* botão arredondado */
+    color: var(--primary-color);
+    border: none;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .5s;
+}
+
+ .btn span, .btn i {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+ }
+
+.btn-primary span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    border: 1px solid var(--hover-menu);
+}
+
+/* Main */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+ 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projects, .services, .contacts {
+    /*padding: 5rem 10rem;*/
+   padding: 2.5rem 1rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title { /* H3 */
+   font-size: 2rem;
+   color: var(--cor-titulo);
+   font-weight: 100;
+}
+
+.card-description { /* P */
+  color: var(--cor-text);
+  font-size: 2rem;
+}
+
+.card-list, .sobre-lista { /* estrutura lista */
+  margin-left: 1.25rem;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+
+.card-item, .sobre-item { /*tópicos lista */
+    list-style: 1.25rem;
+    margin-top: 5px;
+}
+  
+.card-button, .card-description {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+}
+
+.card-button .btn {
+   padding: .65rem 1.25rem;
+   margin-top: 15px;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+
+.project .btn {
+  width: auto;
+  margin: auto;
+}
+
+
+/* Responsividade Responsivo */
+
+@Media (min-width: 768px) {
+    #header {
+        position: fixed;
+        padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+    }
+    .header-nav,
+    .header-toggle {
+        min-width: 30%;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+
+
+    }
+
+    h3{
+
+
+    }
+    #home, .projects, .services, .contacts {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+
+}
+
+@Media (min-width: 992px) {
+    .project-card {
+        flex-direction: row;
+    }
+    .card-cover {
+        width: 55%;
+    }
+
+}
+
+@Media (min-width: 1200px) {
+
+    h2{
+        font-size: 4rem;
+
+    }
+
+    h3{
+        font-size: 2.5rem;
+
+    }
+    #home {
+        padding: 10rem 6rem 2rem;
+
+    }
+
+    .main-content .btn {
+        width: auto;
+    }
+
+    p, span, li {
+        font-size: 1.15rem;
+    }
+    
+    .card-button .btn
+    .descricao-button .btn {
+        width: auto;
+    }
+       
+}
+
+@Media (min-width: 1400px) {
+    h1 {
+       font-size: 6.25rem;
+    }
+    
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem;
+    }
+    
+    .projects, .services, .contacts {
+        padding: 10rem 15rem 4rem;
+    }
+   
+}
