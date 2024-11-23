@@ -1,42 +1,636 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Julyana | Portifólio 👻</title>
-    <!--Estilo CSS-->
-    <link rel="stylesheet" href="/CSS/estilo.css">
-    <!--Booststrap Icons-->
+    <title> 👻 Julyana Rocha | Meu Website </title>
+
+    <!---Link para o Boodstrp CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- BootStrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Boxicons Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+     <!-- Estilo CSS -->
+     <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 
 <body>
-    <header>
-        <!--navigation -->
-        <nav> <!--menu desktop -->
-            <ul class="menu-principal">
-                <li> INICIO </li>
-                <li> TRABALHOS </li>
-                <li> SOBRE </li>
-                <li> CONTATO </li>
+
+    <header id="header"> <!-- cabeçalho -->
+        <nav class="header-nav">
+
+            <!-- menu Desktop -->
+            <ul class="menu menu-principal">
+                <li class="menu-item">
+                    <a class="menu-link active" href="cursos.html">
+                        <span class="menu-text"> Home </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="cursos.html">
+                        <span class="menu-text"> Projetos </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="cursos.html">
+                        <span class="menu-text"> Sobre </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="cursos.html">
+                        <span class="menu-text"> Contato </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="https://www.udemy.com/course/chatgpt-plus/?couponCode=BFCPSALE24" target="_blank">
+                        <span class="menu-text"> Udemy </span>
+                    </a>
+                </li>
+
             </ul>
-           
         </nav>
-        <!--logo-->
-        <div class="">
-            <a href="#INICIO">
-                <img src="img/logo.png" alt="" class="">
+
+        <div class="header-logo"> <!-- area do logo -->
+            <a href="#home">
+                <img class="logo" src="img/JR.png" alt="">
             </a>
+        </div><!-- Fim area do logo -->
+
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
 
-        <div class="">
-            <i class="bi bi-sun"> </i>
+    </header> <!-- fim cabeçalho -->
+
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile">
+        <ul class="menu menu-mobile">
+
+            <li class="menu-item">
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-telephone"> </i>
+                    <span class="menu-text"> Contato </span>
+                </a>
+            </li>
+
+        </ul>
+    </nav> <!-- Fim menu mobile -->
+
+    <main id="home"> <!-- principal ou resumo -->
+
+        <div class="main-content">
+
+            <h1>Soluções Criativas & Desenvolvimento Front-End </h1>
+            <!-- titulo / Slogan -->
+
+            <p> Julyana, Carapicuíba - SP, Desenvolvedora Front-End.</p>
+
+            <!-- Redes Sociais -->
+            <ul class="menu menu-social">
+
+                <li>
+                    <a href="https://github.com/julyanarch/julyana-rocha/tree/main" target="_blank">
+                        <i class="menu-icon bi bi-github"> </i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/julyana-rocha-7227b7240/" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/gustavo.feriani/" target="_blank">
+                        <i class="menu-icon bi bi-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://wa.me/+5511985374326" target="_blank">
+                        <i class="menu-icon bi bi-whatsapp"></i>
+                    </a>
+                </li>
+
+            </ul> <!-- Fim Redes Sociais -->
+
+            <a href="#projetos">
+                <button class="btn btn-primario">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"> </i>
+                </button>
+            </a>
+
+            <div class="video">
+
+                <iframe width="859" height="483" src="https://www.youtube.com/embed/1mXrxc_sv1o" title="Front-end vs back-end: What&#39;s the difference?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <section id="projetos" class="projetos">
+
+        <h2 data-aos="fade-down" data-aos-delay=""> Projetos </h2>
+
+        <div class="projetos-container">
+
+
+            <!-- proj 1 -->
+            <div class="projeto-card">
+
+                <img src="img/ads.jpg" alt="" class="card-cover" data-aos="fade-right"
+                    data-aos-delay="400">
+
+                <div class="card-body" data-aos="fade-up" data-aos-delay="600">
+
+                    <h3 class="card-title"> Curso Inst. Julyana Rocha </h3>
+
+                    <p class="card-descricao"> Curso de ADS </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            Introdução ao Marketing Digital e Publicidade Online
+                        </li>
+
+                        <li class="card-item">
+                            Métricas e Análise de Desempenho
+                        </li>
+
+                        <li class="card-item">
+                            Publicidade Programática
+                        </li>
+
+                        <li class="card-item">
+                            Para Empreendedores e donos de pequenas empresas que desejam aumentar a visibilidade e as vendas de seus produtos ou serviços através de anúncios online.
+                        </li>
+
+                        <li class="card-item">
+                            Para prorofissionais de marketing digital que buscam se especializar em Ads e melhorar suas estratégias de publicidade paga.
+                        </li>
+
+                        <li class="card-item">
+                            Para freelancers e agências de publicidade que desejam aprimorar suas habilidades na criação e otimização de campanhas de Ads.
+                        </li>
+
+                    </ul>
+
+                    <div class="card-button">
+
+                        <button class="btn btn-primario" data-aos="zoom-in" data-aos-delay="1500">
+
+                            <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
+                                <span> Ver Loja </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+                        </button>
+
+                        <button class="btn">
+                            <a href="https://github.com/guuhferiani" target="_blank">
+                                <span> Repositório </span>
+                            </a>
+                        </button>
+
+                    </div> <!-- fim card Button -->
+                </div> <!--  fim card body -->
+            </div> <!-- Fim proj 1 -->
+
+
+            <!-- proj 2 -->
+            <div class="projeto-card card-reverse">
+
+                <section id="slide" class="slide">
+
         
-        </div>
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/kindles.png" class="d-block w-100" alt="img/kindles.png">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/livros darkside.webp" class="d-block w-100" alt="img/livros darkside.webp">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/livros king.jpg" class="d-block w-100" alt="img/livros king.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+            
+            
+                </section>
+
+                <div class="card-body">
+
+                    <h3 class="card-title"> Julyana Books </h3>
+
+                    <p class="card-descricao"> Loja online para venda de livros. </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            Venda de Kindles (todos os modelos)
+                        </li>
+
+                        <li class="card-item">
+                            Especiais raros do Stephan King
+                        </li>
+
+                        <li class="card-item">
+                            Darkside books - livros em geral
+                        </li>
+                    </ul>
+                
+
+                    <div class="card-button">
+
+                        <button class="btn btn-primario">
+
+                            <a href="https://www.darksidebooks.com.br/?gad_source=1&gclid=EAIaIQobChMI37Dyr-HPiQMVfyhECB0BQxsfEAAYASAAEgLYHvD_BwE"
+                                target="_blank">
+                                <span> Ver Catálogo </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+                        </button>
+
+                        <button class="btn">
+                            <a href="https://www.darksidebooks.com.br/?gad_source=1&gclid=EAIaIQobChMI37Dyr-HPiQMVfyhECB0BQxsfEAAYASAAEgLYHvD_BwE" target="_blank">
+                                <span> Repositório </span>
+                            </a>
+                        </button>
+
+                    </div> <!-- fim card Button -->
+                </div> <!--  fim card body -->
+            </div> <!-- Fim proj 2 -->
+
+            <!-- Proj 3 -->
+            <div class="projeto-card">
+
+                <img class="card-cover" src="img/projetos/portfólio.PNG" alt="">
+
+                <div class="card-body">
+
+                    <h3 class="card-title"> Portfolio Pessoal </h3>
+                    <p class="card-descricao"> A história por trás do meu Portfólio. </p>
+
+                    <ul class="card-lista">
+                        <li class="card-item">
+                            Postagens relacionadas em Destaque;
+                        </li>
+                        <li class="card-item">
+                            Seção dos Projetos;
+                        </li>
+                        <li class="card-item">
+                            Biografia do Autor;
+                        </li>
+                    </ul>
+
+                    <div class="card-button">
+                        <button class="btn btn-primario">
+                            <a href="https://www.linkedin.com/in/julyana-rocha-7227b7240/" target="_blank">
+                                <span> Prévia </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+                        </button>
+                        <button class="btn">
+                            <a href="https://www.linkedin.com/in/julyana-rocha-7227b7240/" target="_blank">
+                                <span> Repositório </span>
+                            </a>
+                        </button>
+                    </div>
 
 
-    </header> <!--fim header-->
+
+                </div> <!-- fim Card Body -->
+
+
+            </div> <!-- Fim Proj 3 -->
+
+
+
+
+
+        </div> <!-- Fim projeto container -->
+
+
+    </section>
+
+
+    <section id="sobre" class="sobre">
+
+        <article class="sobre-conteudo1">
+
+            <img class="sobre-logo" src="img/capa-o-que-e-Front-end.webp" alt="">
+
+            <div class="sobre-descricao">
+
+                <h2> Sobre Mim </h2>
+                <p> Sou apaixonada por livros estilo darkside e pela constante busca de aprendizado. Atualmente, estou cursando Tecnólogo de desenvolvimento de sistemas, após passar boa parte da minha carreira em áreas administrativas. A transição para TI tem sido um desafio empolgante e enriquecedor, pois estou combinando minhas habilidades analíticas e organizacionais com novos conhecimentos técnicos. Acredito que essa junção de experiências me proporciona uma visão ampla e estratégica, o que me torna capaz de atuar com eficiência tanto em tarefas técnicas quanto em questões mais voltadas para gestão e processos. Minha vontade de aprender e evoluir constantemente me motiva a buscar novos desafios e oportunidades para crescer na área de TI. </p>
+
+                <div class="sobre-icones">
+                    <i class="bi bi-translate"> </i>
+                    <span> Inglês: Intermediário </span>
+                </div>
+
+                <div class="descricao-button">
+
+                    <a href="http://wa.me/+5511" target="_blank">
+                        <button class="btn btn-primario">
+                            <span> Conecte-se Comigo </span>
+                            <i class="bi bi-arrow-up-right"> </i>
+                        </button>
+                    </a>
+
+                </div>
+
+
+            </div> <!-- fim descricao -->
+
+        </article> <!-- fim conteudo 1 -->
+
+        <article class="sobre-conteudo2">
+
+            <div class="col1"> <!-- Coluna 1 / Vertical -->
+            
+                <div class="row1">  <!-- linhas 1 / Horintal -->
+
+                    <h3> Formação </h3>
+
+                    <h4> Análise de desenvolvimento de Sistemas </h4>
+                    <span> Set 2024 - Atualmente </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span>SENAI</span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Tecnólogo  </span>
+                    </div>
+                    <br> <br>
+                    <!-- nova formação  -->
+                    <h4> Desing de Interface Web </h4>
+                    <span> Set 2024 - Atualmente </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> SENAI </span>
+                    </div>
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Curso </span>
+                    </div>
+                </div>  
+                
+                <div class="row2"> 
+
+                    <h3> Experiências </h3>
+
+                    <h4> Auxiliar administrativo </h4>
+                    <span> SBB | Setembro 2023 - Atualmente </span>
+                    <span> Auxiliar na área da logística </span>
+                    
+                    <ul class="sobre-lista">
+                        <li class="sobre-item"> Planejamento e Coordenação de Processos Logísticos </li>
+                        <li class="sobre-item"> Gestão de Estoque </li>
+                        <li class="sobre-item"> Gestão de Custos Logísticos </li>
+                        <li class="sobre-item"> Gestão de Fornecedores </li>
+                    </ul>
+
+
+                    <h5> Auxiliar administrativo </h5>
+                    <span> Instituo Perez | Setembro 2022 - Abril 2023 </span>
+                    <span> Auxiliar de escritório em geral </span>
+                    
+                    <ul class="sobre-lista">
+                        <li class="sobre-item"> Verificação de Convênios e Credenciamento </li>
+                        <li class="sobre-item"> Atendimento ao Paciente </li>
+                        <li class="sobre-item"> Autorizações e agendamento de Procedimentos </li>
+                        <li class="sobre-item"> Negociação e Contato com os Convênios </li>
+                    </ul>
+                    
+    
+
+
+                </div> <!-- fim linha 2 -->
+
+            </div>  <!-- Fim coluna 1 -->
+
+            <div class="col2"> <!-- Coluna 2 --> 
+
+                <h3> Cursos </h3>
+
+                <div class="accordion1">
+
+                    <!-- Pergunta 1 -->
+                    <div class="accordion-item active">
+                        <!-- pergunta -->
+                        <button class="accordion-header1 start">
+                            <span>Interface de Desing Web</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <!-- Resposta -->
+                        <div class="accordion-body1">
+                            <p>Fundamentos do Design de Interface</p>
+                            <p>O curso de Interface de Design Web tem como objetivo ensinar os conceitos, ferramentas e práticas para criar interfaces visuais atrativas e funcionais para sites e aplicativos. O foco principal é na experiência do usuário (UX) e na interface do usuário (UI), abordando desde a concepção do layout até a implementação de elementos visuais que garantam uma navegação intuitiva e eficiente</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="accordion-item">
+
+                        <!-- pergunta -->
+                        <button class="accordion-header1 start">
+                            <span>Curso de Administração</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <!-- resposta -->
+                        <div class="accordion-body1">
+                            <p> Fundamentos </p>
+                            <p> O curso de Administração visa formar profissionais aptos a gerir organizações de diferentes portes e setores, sendo capazes de tomar decisões estratégicas que impactem positivamente o desempenho da empresa. O aluno será capacitado a atuar em diversas funções administrativas, como finanças, marketing, recursos humanos, logística e gestão de projetos.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="accordion-item">
+
+                        <!-- pergunta -->
+                        <button class="accordion-header1 start">
+                            <span>Curso de Logística</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <!-- resposta -->
+                        <div class="accordion-body1">
+                            <p> Tecnologia e Inovação em Logística </p>
+                            <p> O curso de Logística tem como objetivo formar profissionais capazes de gerenciar e otimizar o fluxo de materiais, informações e recursos dentro de uma empresa, desde a origem até o destino final. O foco é garantir que os produtos cheguem ao consumidor de maneira eficiente, no tempo certo e com o menor custo possível. A formação abrange diversos aspectos da logística, incluindo transporte, armazenagem, distribuição, gestão de estoques e cadeia de suprimentos..
+                            </p>
+                        </div>
+                        
+                    </div>
+
+
+
+                </div> 
+                
+            </div> <!-- Fim coluna 2 -->
+
+        </article> <!-- fim conteudo 2 -->
+
+
+
+    </section> <!-- Fim Sobre -->
+
+    <section id="contato" class="contato">
+
+        <h2> Contato </h2>
+        <p> 
+            <br> <!--equivale a uma linha / espaço no html-->
+            Ficou com alguma dúvida? Quer conversar sobre um projeto ou compartilhar alguma ideia? Fique à vontade para me enviar uma mensagem! Estou sempre disponível para conversar e responder o mais rápido possível. 
+        </p>
+
+        <ul class="menu menu-social">
+             
+            <li>
+               <a href="https://github.com/julyanarch/julyana-rochatree/main" target="_blank">
+                 <i class="menu icon bi bi-github"></i>
+                 <spam>GitHub</spam>
+                </a>
+
+            </li>
+
+
+            <li>
+                <a href="http://wa.me/+5511985374326">
+                 <i class="menu icon bi bi-whatsapp"></i>
+                 <spam>whatsapp</spam>
+                </a>
+            </li>
+            
+            
+            <li>
+                <a href="https://www.linkedin.com/in/julyana-rocha-7227b7240/" target="_blank">
+                 <i class="menu icon bi bi-linkedin"></i>
+                 <spam>linkedin</spam>
+                </a>
+ 
+             </li>
+
+        </ul>   <!-- fim menu social-->
+
+        <!--- e-mail-->
+         <a href="mail to: Julyanarch142@hotmail.com ">
+            <!--ir para // mail to--->
+           
+            <button class="btn btn-primario">
+
+              <spam class="e-mail"> julyanarch142@hotmail.com </spam>
+
+            </button>
+        
+        
+        
+        </a>
+             
+
+
+    </section>
+
+    <footer>  <!---Fim Contato-->
+         <p> 
+           &copy; 2024. Site desenvolvido para fins de divulgação pessoal e profissional
+           <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank">
+             | Senai Leopoldina - SP
+
+            </a>
+
+           | Desenvolvido por:
+           <a href="https://github.com/julyanarch/julyana-rocha" target="_blank">
+              Julyana Rocha
+
+            </a>
+        </p>
+
+    </footer>
+
+    <!---Script do boodstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"> </script>
+
 </body>
 
 </html>
